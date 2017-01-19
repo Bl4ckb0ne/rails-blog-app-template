@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Rails-blog-app</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+	
+    <%= google_webfonts_init({
+    	google: ['Roboto Slab', 'Roboto']
+    }) %>
+  </head>
+
+  <body>
+
+    <div class="row">
+	  <div class="col-md-1"></div>
+
+      <div class="col-md-6">
+		<h1> <%= link_to "rails-blog-app", root_path %> </h1>
+		
+		<hr>	
+	
+        <%= yield %>
+      </div>
+	  
+      <div class="col-md-1"></div>
+	  
+      <div class="col-md-2">
+		<br />	
+	
+        <p>
+		  Stuff can go here
+		</p>
+
+        <h3> License </h3>
+		
+		<p>
+		   The content for this site is 
+		   <a href="https://creativecommons.org/licenses/by-sa/2.0/">
+             CC-BY-SA
+           </a>
+           . The code for this site is 
+           <a href="https://github.com/Bl4ckb0ne/rails-blog-app">
+             MIT
+           </a>.
+        </p> 
+	  
+      </div>
+
+	  <div class="col-md-1"></div>
+
+    </div>
+
+  </body>
+</html>

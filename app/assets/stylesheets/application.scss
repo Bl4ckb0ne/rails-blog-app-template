@@ -1,0 +1,23 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "font-awesome";
+
+@font-face {
+  font-family: "Roboto";
+  src: url('https://fonts.googleapis.com/css?family=Roboto');
+}
+
+body {
+  font-family: "Roboto";
+  font-size: 12pt;
+}
+
+h1 a:link {
+	text-decoration: none;
+}
+
+a:link, a:visited {
+    color: #333333;
+    text-decoration: underline;
+}
+

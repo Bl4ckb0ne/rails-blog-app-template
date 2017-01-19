@@ -1,0 +1,23 @@
+<div>
+<%= paginate @articles %>
+<% @articles.each do |article| %>
+  <div class="article">
+    <h3 class="title">
+      <strong>
+        <%= link_to article.title, article_path(article) %> 
+      </strong>
+    </h3>
+
+	<br />
+
+    <div class="content text-justify">
+      <%= truncate_html article.text.html_safe, :length => 1000 %>
+    </div>
+  </div>
+
+  <br /> 
+  <br />
+<%= paginate(@articles) %>
+<% end %>
+</div>
+
