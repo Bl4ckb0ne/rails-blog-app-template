@@ -43,7 +43,6 @@ gem 'autoprefixer-rails'
 
 # Fonts
 gem 'font-awesome-rails'
-gem 'google-webfonts-rails'
 
 # Render markdown
 gem 'redcarpet'
